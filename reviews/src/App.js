@@ -8,6 +8,7 @@ console.log(Data);
 function App() {
   return (
     <div className="App">
+      
       <Reviews DATA={Data} ></Reviews>
     </div>
   );

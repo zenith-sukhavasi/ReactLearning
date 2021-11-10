@@ -29,7 +29,11 @@ const Reviews = ({DATA}) => {
         return num
     }
     return ( 
+        <main>
+            <h1>our reviews</h1>
+            <div className="under"></div>
         <div className="reviews">
+         
              {DATA.map((data) => (data.id===id) ?(<Review DATA={data} key={data.id}></Review>):(<p className="hide">hi</p>) )} 
             {/* {DATA.filter((data) =>data.id==id)} */}
                 {/* <button onClick={() =>{setId(id-1)}}>--</button>
@@ -43,6 +47,7 @@ const Reviews = ({DATA}) => {
             
           
         </div>
+        </main>
      );
 }
  
